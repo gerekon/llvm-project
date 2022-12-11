@@ -672,6 +672,8 @@ public:
 
   bool isOpaque() const { return !PointeeTy; }
 
+  Type *getElementType() const { return PointeeTy; }
+
   /// Return true if the specified type is valid as a element type.
   static bool isValidElementType(Type *ElemTy);
 
